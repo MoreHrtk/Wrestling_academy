@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Poppins', Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
 }
@@ -106,3 +106,6 @@ header h1 {
     }
 }
 
+h1, h2, h3 {
+    color: #ff4500;
+}
