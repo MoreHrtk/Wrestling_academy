@@ -18,11 +18,14 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     }
 
 
-    const sections = document.querySelectorAll('section');
+    
+});
+
+const sections = document.querySelectorAll('section');
     const revealSection = () => {
         sections.forEach(section => {
             const sectionTop = section.getBoundingClientRect().top;
-            if (sectionTop < window.innerHeight * 0.85) {
+            if (sectionTop < window.innerHeight * 1) {
                 section.classList.add('visible');
             }
         });
@@ -30,5 +33,3 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
 window.addEventListener('scroll', revealSection);
 revealSection(); // To trigger on page load
-
-});

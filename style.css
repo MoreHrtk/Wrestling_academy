@@ -30,11 +30,15 @@ header nav a {
 }
 
 #hero {
-    background: url('images/hero.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 4rem 0;
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
     text-align: center;
+    padding: 100px 20px;
 }
+
 
 .btn {
     background-color: #ff4500;
@@ -49,16 +53,6 @@ header nav a {
 
 section {
     padding: 2rem 0;
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -68,3 +62,47 @@ section.visible {
     opacity: 1;
     transform: translateY(0);
 }
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+
+
+/* Button Hover Animation */
+.btn {
+    background-color: #ff4500;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+}
+
+
+/* Subtle Header Animation (on Load): */
+
+header h1 {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideDown 1.5s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
