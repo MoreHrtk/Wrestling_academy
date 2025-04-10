@@ -1,0 +1,148 @@
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family:'Poppins', Arial, sans-serif;
+          background-color: #f9f9f9;
+          color: #333;
+        }
+
+        .container {
+          width: 90%;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        header {
+          background-color: #000;
+          color: #fff;
+          padding: 1rem 0;
+          text-align: center;
+        }
+
+        header nav a {
+          color: #fff;
+          text-decoration: none;
+          margin: 0 1rem;
+        }
+
+        #hero {
+          background-image: url('./img/background.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          color: white;
+          text-align: center;
+          padding: 100px 20px;
+        }
+
+
+        .btn {
+          background-color: #ff4500;
+          color: #fff;
+          padding: 0.8rem 2rem;
+          text-decoration: none;
+          display: inline-block;
+          margin-top: 1rem;
+          border: none;
+          cursor: pointer;
+        }
+
+        section {
+          padding: 2rem 0;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        section.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        footer {
+          background-color: #000;
+          color: #fff;
+          text-align: center;
+          padding: 1rem 0;
+        }
+
+
+
+
+        /* Button Hover Animation */
+        .btn {
+          background-color: #ff4500;
+          color: white;
+          padding: 12px 24px;
+          border-radius: 30px;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+          background-color: #ff6347;
+          transform: scale(1.05);
+        }
+
+
+        /* Subtle Header Animation (on Load): */
+
+        header h1 {
+          opacity: 0;
+          transform: translateY(-20px);
+          animation: slideDown 1.5s ease forwards;
+        }
+
+        @keyframes slideDown {
+          from {
+              opacity: 0;
+              transform: translateY(-20px);
+          }
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+        }
+
+        h1, h2, h3 {
+          color: #ff4500;
+        }
+
+#trainer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.trainer-card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.trainer-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.trainer-info {
+  max-width: 500px;
+  text-align: left;
+}
+
+.trainer-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.trainer-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
