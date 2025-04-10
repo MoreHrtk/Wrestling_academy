@@ -33,3 +33,17 @@ const sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', revealSection);
 revealSection(); // To trigger on page load
+
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  preloader.style.display = "none";
+}); // Hide preloader after page load
+const backToTop = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+        backToTop.classList.add('show');
+    } else {
+        backToTop.classList.remove('show');
+    }
+});// Show back-to-top button after scrolling down 400px
