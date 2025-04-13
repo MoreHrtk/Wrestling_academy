@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if (backToTop) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 600) {
         backToTop.style.display = 'block';
       } else {
         backToTop.style.display = 'none';

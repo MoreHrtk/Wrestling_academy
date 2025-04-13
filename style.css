@@ -222,7 +222,7 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
+ /*back to top button*/
 .back-to-top {
   position: fixed;
   bottom: 40px;
@@ -262,4 +262,8 @@
 .back-to-top:hover {
   background-color: #ff6347;
 }
-
+/* Shadow for Hero Section */
+#hero h2 {
+  color: #ffffff;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+}
