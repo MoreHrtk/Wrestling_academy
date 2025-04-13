@@ -177,3 +177,15 @@ start = "vscode-css-language-server --stdio"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".config"]
+
+[workflows]
+runButton = "Webserver"
+
+[[workflows.workflow]]
+name = "Webserver"
+author = 19919641
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python -m http.server 5000 --bind 0.0.0.0"
