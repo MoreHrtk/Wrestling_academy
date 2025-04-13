@@ -40,13 +40,20 @@ window.addEventListener("load", function () {
   preloader.style.display = "none";
 }); 
 
-// Show back-to-top button after scrolling down 400px
-const backToTop = document.querySelector('.back-to-top');
+// Show back-to-top button after scrolling down
+document.addEventListener('DOMContentLoaded', () => {
+  const backToTop = document.querySelector('.back-to-top');
+  
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    backToTop.style.display = 'block';
-  } else {
+    // Hide button initially
     backToTop.style.display = 'none';
   }
 });
