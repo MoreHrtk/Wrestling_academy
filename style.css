@@ -1,4 +1,4 @@
-        * {
+* {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
@@ -37,6 +37,10 @@
           color: white;
           text-align: center;
           padding: 100px 20px;
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
 
@@ -52,7 +56,7 @@
         }
 
         section {
-          padding: 2rem 0;
+          padding: 1rem 0;
           opacity: 0;
           transform: translateY(20px);
           transition: opacity 0.6s ease, transform 0.6s ease;
@@ -115,13 +119,19 @@
   margin-top: 2rem;
 }
 
+#trainer h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
 .trainer-card {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  padding: 0 15px;
 }
 
 .trainer-img {
@@ -266,4 +276,66 @@
 #hero h2 {
   color: #ffffff;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (max-width: 768px) {
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trainer-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .trainer-info {
+    text-align: center;
+  }
+}
+
+/* Language Toggle */
+#language-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#language-toggle button {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#language-toggle button:hover {
+  background-color: #ff6347;
+}
+#programs .container {
+    padding-left: 20px; /* Adjust the value as needed */
+}
+
+
+.language-switcher {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 9999;
+}
+.language-switcher button {
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }

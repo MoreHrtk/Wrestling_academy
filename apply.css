@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.required {
+  color: red;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+#google_translate_element {
+  text-align: right;
+  margin-bottom: 20px;
+}

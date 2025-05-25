@@ -43,7 +43,7 @@ window.addEventListener("load", function () {
 // Show back-to-top button after scrolling down
 document.addEventListener('DOMContentLoaded', () => {
   const backToTop = document.querySelector('.back-to-top');
-  
+
   if (backToTop) {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 600) {
