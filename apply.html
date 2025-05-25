@@ -18,10 +18,10 @@
   <h2>Wrestling Academy Application Form</h2>
   <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
     <label>District
-      <input type="text" name="district" required>
+      <input type="text" name="district" >
     </label>
     <label>Tehsil
-      <input type="text" name="tehsil" required>
+      <input type="text" name="tehsil" >
     </label>
     <label>Name (in Hindi) <span class="required">*</span>
       <input type="text" name="name_hindi" required>
@@ -47,7 +47,7 @@
       <textarea name="address" rows="2"></textarea>
     </label>
     <label>Aadhar Number <span class="required">*</span>
-      <input type="text" name="aadhar_number" pattern="\d{12}" maxlength="12" required>
+      <input type="number" name="aadhar_number" pattern="\d{12}" maxlength="12" required>
     </label>
     <label>Blood Group
       <select name="blood_group">
