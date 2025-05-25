@@ -30,7 +30,14 @@ button {
   padding: 10px 20px;
 }
 
+
 #google_translate_element {
-  text-align: right;
-  margin-bottom: 20px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 1000;
 }
+
