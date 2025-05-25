@@ -334,14 +334,3 @@
 #google_translate_element {
   display: inline-block;
 }
-
-/* Make sure header appears just below translate bar */
-header {
-  background-color: #000;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
-  position: sticky;
-  top: 38px; /* Height of translate bar */
-  z-index: 1000;
-}
