@@ -290,6 +290,7 @@
   .trainer-card {
     flex-direction: column;
     text-align: center;
+    
   }
 
   .trainer-info {
@@ -334,3 +335,7 @@
 #google_translate_element {
   display: inline-block;
 }
+ .fake-list p {
+  margin: 0 0 4px 20px; /* Small bottom margin, indented */
+}
+
